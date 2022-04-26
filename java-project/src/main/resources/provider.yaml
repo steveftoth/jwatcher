@@ -1,0 +1,36 @@
+# Provider yaml.
+# Describes a set of generators for a record, structure is seperate
+
+generators:
+  providerid:
+    type: "String"
+    format: ""
+    dependencies: []
+    length: 20
+  first_name:
+    type: "Name"
+    # Could also be LastName, FirstNameFemale, FirstNameAny
+    name_source: "FirstNameMale"
+    # Source locale of name, e.g. USA, UK, China, Japan, India, Brazil, UAE, etc.
+    locale: "USA"
+    
+  last_name:
+    type: "Name"
+    name_source: "LastName"
+    locale: "USA"
+  address_1:
+    type: "MailingAddress"
+    format: "#NNNN $STREET|P.O. BOX #NNNN"
+  address_2:
+    type: "MailingAddress"
+    format: "NNNN $STREET"
+  city:
+    type: "City"
+    locale: "USA"
+  state:
+    type: "USState48"
+  zip_code: [
+    type: "PostalCode"
+    locale: "US"
+    format: "ZipPlusFour"
+  ]

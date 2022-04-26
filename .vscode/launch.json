@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch GenerateDataMain",
+            "request": "launch",
+            "mainClass": "com.codekoan.csv.GenerateDataMain",
+            "projectName": "java-project",
+            "args": "-r 10 -i /Users/steveftoth/Projects/npi/data/pl_pfile_20050523-20220213.csv"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProcessorTest",
+            "request": "launch",
+            "mainClass": "com.codekoan.csv.ProcessorTest",
+            "projectName": "java-project"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "com.codekoan.jwatcher.App",
+            "projectName": "java-project"
+        }
+    ]
+}
